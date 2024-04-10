@@ -44,23 +44,29 @@
           <fieldset>
             <label>
               First Name
-              <input type="text" name="first name" placeholder="Esteban" />
+              <input type="text" name="first name" placeholder="Esteban" required />
             </label>
             <label>
               Last Name
-              <input type="text" name="last name" placeholder="Sanchez" />
+              <input type="text" name="last name" placeholder="Sanchez" required />
             </label>
             <label>
               Email
-              <input type="email" name="email" placeholder="estebansg97@gmail.com" />
+              <input type="email" name="email" placeholder="estebansg97@gmail.com" required />
             </label>
             <label>
               Phone number
-              <input type="number" name="Phone number" placeholder="+57123456789" />
+              <input type="number" name="Phone number" placeholder="+57123456789" required />
             </label>
             <label>
               Message
-              <textarea name="Message" id="" cols="30" rows="10">Hello there!</textarea>
+              <textarea
+                name="Message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Hello there!"
+                required></textarea>
             </label>
           </fieldset>
           <input class="contact-me__button" type="submit" value="Send" />
