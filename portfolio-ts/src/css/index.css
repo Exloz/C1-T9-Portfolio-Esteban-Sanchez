@@ -24,3 +24,13 @@ html {
   padding-block: 20px;
   text-align: center;
 }
+
+@media screen and (max-width: 720px) {
+  .projects {
+    display: block;
+    width: 80%;
+  }
+  .projects__item {
+    width: 100%;
+  }
+}
