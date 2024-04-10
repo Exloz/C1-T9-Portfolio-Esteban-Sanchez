@@ -1,0 +1,57 @@
+.main__title {
+  h2 {
+    text-align: center;
+    padding-block: 30px;
+    font-size: 60px;
+  }
+  h2::before,
+  h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: brown;
+  }
+}
+
+.projects {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 30px auto;
+}
+
+.projects__item {
+  background-color: aliceblue;
+  padding-inline: 10px;
+  width: 30%;
+  border: 20px row rgb(206, 38, 38);
+  border-radius: 0.5em;
+  margin: 10px 10px;
+  padding: 5px 10px;
+  transition: 0.3s;
+  h4 {
+    color: brown;
+    padding-block: 10px;
+    text-align: center;
+  }
+  p {
+    color: black;
+    padding-bottom: 10px;
+    text-align: justify;
+  }
+  details {
+    color: black;
+    padding-block: 10px;
+    li {
+      list-style-position: inside;
+      list-style-type: square;
+    }
+  }
+}
+
+.projects__item:hover {
+  box-shadow: 0 0 35px white;
+}
