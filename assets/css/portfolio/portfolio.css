@@ -16,6 +16,7 @@
 
 .projects {
   padding: 20px;
+  padding-bottom: 230px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
