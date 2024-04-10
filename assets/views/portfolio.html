@@ -9,33 +9,40 @@
       content="Portfolio of software development trainee, Esteban Sanchez" />
     <meta name="og:title" content="Esteban Sanchez's Portfolio" />
     <title>Esteban Sanchez's Portfolio</title>
-    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header>
-      <h1>ESTEBAN'S PORTFOLIO</h1>
+    <header class="header">
+      <h2>Portfolio</h2>
       <nav>
-        <ul>
-          <li><a href="./index.html">ABOUT ME</a></li>
-          <li><a href="./assets/views/portfolio.html">PORTFOLIO</a></li>
-          <li><a href="./assets/views/contact.html">CONTACT ME</a></li>
+        <ul class="header__list">
+          <li class="header__option"><a href="/index.html">ABOUT ME</a></li>
+          <li class="header__option"><a href="./portfolio.html">PORTFOLIO</a></li>
+          <li class="header__option"><a href="./contact.html">CONTACT ME</a></li>
         </ul>
       </nav>
-      <section>
+      <section class="header__icons">
         <a href="https://www.linkedin.com/in/estebansg97" target="_blank">
-          <img src="../images/linkedinimg.png" alt="linkedin logo" />
+          <i class="fa-brands fa-linkedin fa-2xl"></i>
         </a>
         <a href="https://github.com/Exloz" target="_blank">
-          <img src="../images/githubimg.png" alt="Github logo" />
+          <i class="fa-brands fa-github fa-2xl"></i>
         </a>
       </section>
     </header>
-    <main>
-      <section>
-        <h3>MY PORTAFOLIO</h3>
-      </section>
-      <section>
-        <article>
+    <main class="main">
+      <div class="main__title">
+        <h2>My Projects</h2>
+      </div>
+      <section class="projects">
+        <article class="projects__item">
           <header>
             <h4>THE PINGÜINERA LIBRARY</h4>
           </header>
@@ -57,7 +64,7 @@
             </details>
           </body>
         </article>
-        <article>
+        <article class="projects__item">
           <header>
             <h4>THE PINGÜINERA SUPPLIERS</h4>
           </header>
@@ -81,7 +88,7 @@
             </details>
           </body>
         </article>
-        <article>
+        <article class="projects__item">
           <header>
             <h4>BINGO BIG BUDA</h4>
           </header>
@@ -112,7 +119,7 @@
             </details>
           </body>
         </article>
-        <article>
+        <article class="projects__item">
           <header>
             <h4>CRUD CONTACT LIST</h4>
           </header>
@@ -135,7 +142,7 @@
             </details>
           </body>
         </article>
-        <article>
+        <article class="projects__item">
           <header>
             <h4>DATABASE MODELATION</h4>
           </header>
@@ -159,7 +166,7 @@
         </article>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p>© 2023 Esteban Sanchez</p>
     </footer>
   </body>
