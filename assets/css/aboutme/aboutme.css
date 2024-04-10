@@ -1,37 +1,78 @@
 .about-me {
-  margin: auto;
+  padding: auto;
+
   .about-me__title {
     background-color: brown;
     color: black;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    font-style: italic;
+    letter-spacing: 5px;
     width: 100%;
     padding-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: white;
+  }
+
+  .about-me__title::before {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 3px;
   }
 }
-
-/* .about-me__profile {
-  height: 300px;
-  border-radius: 10px;
-  border-color: black;
-} */
 
 .about-me__information {
   background-color: brown;
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 
   .about-me__description {
-    text-align: left;
+    font-size: 20px;
+    h2 {
+      letter-spacing: 3px;
+      text-decoration: underline;
+      padding-bottom: 10px;
+    }
+    h3 {
+      font-style: oblique;
+      color: black;
+    }
+    p {
+      width: 90%;
+      font-size: 18px;
+    }
   }
 
   img {
-    height: 120px;
+    height: 130px;
     margin: 40px;
     border-radius: 20px;
     border-color: white;
     border-style: solid;
+    transition: 0.3s;
+  }
+
+  img:hover {
+    box-shadow: 0 0 35px black;
+  }
+}
+
+.about-me__skills {
+  padding-block: 50px;
+  display: flex;
+  justify-content: space-around;
+
+  h2 {
+    padding-bottom: 10px;
+    text-decoration: underline;
+  }
+  li {
+    list-style: inside;
+    list-style-type: square;
   }
 }
