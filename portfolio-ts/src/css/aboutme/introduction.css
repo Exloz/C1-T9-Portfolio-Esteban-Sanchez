@@ -1,0 +1,36 @@
+.introduction {
+  height: calc(100dvh - 48px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+
+  h3 {
+    font-size: 100px;
+    text-align: center;
+    font-style: oblique;
+  }
+  h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  span {
+    color: brown;
+    font-size: 50px;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 20px;
+    transition: 0.4s;
+    font-size: 25px;
+    background-color: brown;
+  }
+  a:hover {
+    color: brown;
+    background-color: white;
+  }
+}
