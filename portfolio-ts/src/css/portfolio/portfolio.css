@@ -34,21 +34,63 @@
   padding: 5px 10px;
   transition: 0.3s;
   h4 {
+    font-size: 30px;
+
+    text-decoration: underline;
     color: brown;
     padding-block: 10px;
     text-align: center;
   }
   p {
+    font-size: 20px;
+    line-height: 150%;
     color: black;
     padding-bottom: 10px;
     text-align: justify;
   }
-  details {
+
+  .projects__icons {
+    padding-block: 50px;
+    text-align: center;
+  }
+  a {
+    font-size: 50px;
+    text-decoration: none;
+    color: brown;
+    transition: 0.4s;
+  }
+  a:hover {
+    color: black;
+  }
+
+  .projects__list {
+    align-items: center;
+    justify-content: center;
     color: black;
     padding-block: 10px;
+
+    summary {
+      list-style: none;
+      padding-bottom: 20px;
+    }
+
+    ul {
+      gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     li {
+      color: aliceblue;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: black;
+      list-style: none;
       list-style-position: inside;
-      list-style-type: square;
+      transition: 0.3s;
+    }
+    li:hover {
+      scale: 1.3;
     }
   }
 }
