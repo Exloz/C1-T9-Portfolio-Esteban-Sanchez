@@ -12,3 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const checkbox = document.querySelector('#checkbox-id') as HTMLInputElement;
+
+  checkbox?.addEventListener('click', () => {
+    if (checkbox.checked) {
+      document.documentElement.style.colorScheme = 'light';
+    } else {
+      document.documentElement.style.colorScheme = 'dark';
+    }
+  });
+});

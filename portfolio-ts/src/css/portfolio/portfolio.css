@@ -24,7 +24,7 @@
 }
 
 .projects__item {
-  background-color: aliceblue;
+  background-color: rgb(187, 187, 187);
   padding-inline: 10px;
   width: 40%;
   border: 20px row rgb(206, 38, 38);
