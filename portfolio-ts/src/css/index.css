@@ -5,6 +5,7 @@
 @import './contact/contactme.css';
 @import './portfolio/portfolio.css';
 @import './responsive.css';
+@import './hamburger.css';
 
 :root {
   color-scheme: dark;
