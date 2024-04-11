@@ -1,0 +1,36 @@
+@media screen and (max-width: 730px) {
+  .projects {
+    display: block;
+    width: 80%;
+  }
+  .projects__item {
+    width: 100%;
+  }
+
+  .about-me__information {
+    display: block;
+    text-align: center;
+  }
+  .about-me__description {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me__skills {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .introduction h3 {
+    font-size: 50px;
+  }
+  .introduction h2,
+  .introduction span,
+  .introduction a {
+    font-size: 20px;
+  }
+}

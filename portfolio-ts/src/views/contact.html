@@ -20,9 +20,31 @@
   </head>
   <body>
     <header class="header">
-      <h2>Contact Me</h2>
-      <nav>
-        <ul class="header__list">
+      <nav class="header__menus">
+        <div id="menu-toggle" class="menu-toggle">
+          <input class="checkbox" type="checkbox" />
+          <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+            <path
+              class="lineTop line"
+              stroke-linecap="round"
+              stroke-width="4"
+              stroke="black"
+              d="M6 11L44 11"></path>
+            <path
+              stroke-linecap="round"
+              stroke-width="4"
+              stroke="black"
+              d="M6 24H43"
+              class="lineMid line"></path>
+            <path
+              stroke-linecap="round"
+              stroke-width="4"
+              stroke="black"
+              d="M6 37H43"
+              class="lineBottom line"></path>
+          </svg>
+        </div>
+        <ul id="header__list" class="menu-hidden">
           <li class="header__option"><a href="/index.html">ABOUT ME</a></li>
           <li class="header__option"><a href="./portfolio.html">PORTFOLIO</a></li>
           <li class="header__option"><a href="./contact.html">CONTACT ME</a></li>
@@ -36,11 +58,15 @@
           <i class="fa-brands fa-github fa-2xl"></i>
         </a>
       </section>
+      <label class="switch">
+        <input type="checkbox" id="checkbox-id" />
+        <span class="slider"></span>
+      </label>
     </header>
     <main class="main">
       <section class="contact-me">
         <h1>Send me a message!</h1>
-        <form>
+        <form action="https://formsubmit.co/estebansg97@gmail.com" method="POST">
           <fieldset>
             <label>
               First Name
@@ -56,7 +82,7 @@
             </label>
             <label>
               Phone number
-              <input type="number" name="Phone number" placeholder="+57123456789" required />
+              <input type="number" name="Phone number" placeholder="3123456789" required />
             </label>
             <label>
               Message
@@ -76,5 +102,6 @@
     <footer class="footer">
       <p>© 2023 Esteban Sanchez</p>
     </footer>
+    <script type="module" src="/src/ts/main.ts"></script>
   </body>
 </html>

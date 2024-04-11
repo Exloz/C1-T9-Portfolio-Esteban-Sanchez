@@ -27,6 +27,7 @@
     border-radius: 10px;
   }
   label {
+    width: 100%;
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -38,9 +39,12 @@
     height: 30px;
     margin-top: 8px;
     border-radius: 5px;
+    color: gray;
   }
 
   textarea {
+    width: 100%;
+
     background-color: aliceblue;
     color: grey;
   }
@@ -48,7 +52,7 @@
   .contact-me__button {
     color: brown;
     margin-block: 15px;
-    width: 30%;
+    width: 300px;
     transition: 0.5s;
     border-radius: 10px;
   }

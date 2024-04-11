@@ -1,0 +1,107 @@
+.header__menus {
+  position: relative;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__menus ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header__menus li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-toggle {
+  height: 50px;
+  width: 50px;
+  transform: 0.2s;
+  position: relative;
+}
+.menu-toggle .checkbox {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.line {
+  transition: 0.5s;
+  stroke-width: 6px;
+  stroke: black;
+}
+.lineTop {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 25;
+}
+.lineBottom {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 60;
+}
+.lineMid {
+  stroke-dasharray: 40 40;
+}
+.menu-toggle .checkbox:checked + svg .line {
+  stroke: aliceblue;
+}
+.menu-toggle .checkbox:checked + svg .lineTop {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(45deg) translate(-7px, -5px);
+}
+.menu-toggle .checkbox:checked + svg .lineMid {
+  stroke-dashoffset: 40;
+}
+.menu-toggle .checkbox:checked + svg .lineBottom {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(-45deg) translate(-5px, 5px);
+}
+
+@media (max-width: 730px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .header__menus ul {
+    display: none;
+    position: absolute;
+    top: 120%;
+    width: 200px;
+    height: 400%;
+    left: 0;
+    right: 10;
+    flex-direction: column;
+    background: rgba(177, 74, 74, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 1s;
+  }
+
+  .header__menus ul:hover {
+    box-shadow: 0 0 5px rgb(254, 255, 255), 0 0 25px rgb(255, 255, 255), 0 0 50px rgb(255, 255, 255),
+      0 0 100px rgb(255, 255, 255);
+  }
+
+  .menu-visible {
+    display: flex !important;
+  }
+
+  .menu-hidden {
+    display: none !important;
+  }
+}

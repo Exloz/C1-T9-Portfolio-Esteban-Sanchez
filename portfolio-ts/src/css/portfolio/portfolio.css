@@ -15,7 +15,6 @@
 }
 
 .projects {
-  padding: 20px;
   padding-bottom: 230px;
   display: flex;
   flex-wrap: wrap;
@@ -25,9 +24,9 @@
 }
 
 .projects__item {
-  background-color: aliceblue;
+  background-color: rgb(187, 187, 187);
   padding-inline: 10px;
-  width: 30%;
+  width: 40%;
   border: 20px row rgb(206, 38, 38);
   border-radius: 0.5em;
   margin: 10px 10px;
